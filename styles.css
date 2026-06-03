@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    place-items: center;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 375px;
+    margin: auto;
+    margin-top: 3rem;
+    box-shadow: 0 4px 8px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+}
+.title {
+    align-self: flex-start;
+  
+}
+.title-description, .title {
+    padding: 1rem;
+    letter-spacing: 0.7px;
+}
+.prep-section, .ingr-section, 
+.instr-section, .nutr-section {
+    padding: 1rem;
+}
+h2, ul, ol, li {
+    margin-bottom: 0.7rem;
+}
+ul, ol {
+    padding-left: 1.3rem;
+}
+
+.prep-section {
+    border-radius: 0.6rem;
+    margin-left: 2rem;
+    background-color: hsl(330, 100%, 98%);
+}
+.prep-title {
+    color: hsl(332, 51%, 32%);
+}
+.prep-list {
+    padding-left: 1.4rem;
+}
+.prep-item::marker {
+    color: hsl(332, 51%, 32%);
+}
+.prep-item {
+    padding-left: 1rem;
+    letter-spacing: 0.7px;
+
+}
+.ingr-title, .instr-title,
+.nutr-title {
+    color: hsl(14, 45%, 36%);
+}
+strong {
+    color: rgba(0, 0, 0, 0.893);
+}
+
+.ingr-item, .instr-item {
+    padding-left: 1rem;
+    letter-spacing: 0.6px;
+}
+.ingr-item::marker {
+    color: hsl(14, 45%, 36%);
+}
+.instr-item::marker {
+     color: hsl(14, 45%, 36%);
+}
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    width: 90%;
+    margin: auto;
+}
+.table-item {
+    padding: 0.5rem 1rem;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.689);
+    display: flex;
+    justify-content: space-between;
+    /* gap: 6rem; */
+    align-items: center;
+}
+.table-item span, strong {
+    width: 50%;
+}
+.table-item strong {
+    color: hsl(14, 45%, 36%);
+}
+
+@media (min-width: 376px) {
+    body {
+        background-color:  hsl(30, 54%, 90%);
+        font-size: 1.3rem
+    }
+    .container {
+        background-color:  hsl(0, 0%, 100%);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .image {
+        border-radius: 1rem;
+       
+        
+    }
+}
